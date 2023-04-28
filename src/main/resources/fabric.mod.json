@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "where-are-we",
+  "version": "${version}",
+  "name": "Where Are We?",
+  "description": "",
+  "authors": [],
+  "contact": {
+    "repo": "https://github.com/Cooper/where-are-we"
+  },
+  "license": "All-Rights-Reserved",
+  "icon": "assets/where-are-we/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "me.coopersully.wherearewe.client.WAWClient"
+    ],
+    "main": [
+      "me.coopersully.wherearewe.WAW"
+    ]
+  },
+  "mixins": [
+    "where-are-we.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
